@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotionShop: Supplementary Material (CVPR 2025)</title>
-    <script src="https://www.w3counter.com/tracker.js?id=154461"></script>
     <style>
 
     .figure-label {
@@ -160,291 +159,9 @@
     <div class="header-container">
         <div class="header-container">
             <h1 class="main-title">MotionShop: Zero-Shot Motion Transfer in Video Diffusion Models with Mixture of Score Guidance</h1>
+            <div class="submission-info">Paper ID: #3361</div>
+            <div class="supplementary-label">Supplementary Material</div>
         </div>
-    <!-- Previous sections remain the same -->
-
-    <div class="storyboard-container">
-        <div class="storyboard-title">
-            <div class="figure-header">
-                <span class="figure-label">Overview: One Motion Multiple Possibilities</span>
-                <!-- <span class="figure-title">Teaser</span> -->
-            </div>
-        </div>
-
-        <div class="transformations-grid">
-            
-            <div class="transformation-item">
-                <div class="showcase-label">Input</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">Original</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Plane</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A vintage biplane gl_1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A vintage biplane in a serene beach, where waves crash against the shore"</div>
-            </div>
-            
-            <div class="transformation-item">
-                <div class="showcase-label">Tiger</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A lively tiger leapi_0.8_-1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A tiger leaping along a winding dirt path"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Car</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A futuristic hoverin_1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A futuristic hovering car with neon underglow"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Motorcycle</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A sleek motorcycle d_1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">“A motorcycle driven by a robot, cruising through a desert”</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Carriage</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A crystal carriage d_1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">“A crystal carriage drawn by an ethereal horse in a fog”</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Cart</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A wooden cart pulled_1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">“A wooden cart pulled by tiny, winged creatures”</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Snail</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A whimsical giant sn_1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A whimsical giant snail with a spiral shell, making its way along a misty, enchanted forest"</div>
-            </div>
-            
-            <div class="transformation-item">
-                <div class="showcase-label">Submarine</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/car_turn/A submarine gliding _1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A submarine gliding through a glass tube filled with water"</div>
-            </div>
-
-            <!-- Wolf -->
-            <div class="transformation-item">
-                <div class="showcase-label">Input</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/sources/wolf_15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">Original</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Owl</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/wolf/Mechanical owl. A st_1_9.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A mechanical owl"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">TV Robot</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/wolf/Vintage TV Robot. A _1_9.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A retro vintage TV robot"</div>
-            </div>
-
-
-            <div class="transformation-item">
-                <div class="showcase-label">Monkey</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/wolf/monkey_1_6.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A monkey"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Pig</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/wolf/pig_1_9.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A pig"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">TV Remote</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/wolf/TV Remote_1_9.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A person holding a TV remote"</div>
-            </div>
-
-            <!-- Blackswan -->
-            <div class="transformation-item">
-                <div class="showcase-label">Input</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/sources/blackswan_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">Original</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Dolphin</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/blackswan/A dolphin leaping ou_-1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A dolphin leaping out of the water,"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Turtle</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/blackswan/A giant turtle with _-1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A giant turtle with a miniature forest growing on its back"</div>
-            </div>
-
-
-            <div class="transformation-item">
-                <div class="showcase-label">Jetski</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/blackswan/A man riding a jetsk_-1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A man riding a jetski"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Knight</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/blackswan/A medieval knight on_-1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A medieval knight on horseback"</div>
-            </div>
-
-            <div class="transformation-item">
-                <div class="showcase-label">Hot Air Balloon</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/blackswan/A floating hot air b_-1_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A floating hot air balloon"</div>
-            </div>
-
-            <!-- Cats -->
-            <div class="transformation-item">
-                <div class="showcase-label">Input</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/sources/cats_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">Original</div>
-            </div>
-    
-            <div class="transformation-item">
-                <div class="showcase-label">Miniatures</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/cats/A pair of cute, mini_0.7_2_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"A pair of miniature creatures"</div>
-            </div>
-    
-            <div class="transformation-item">
-                <div class="showcase-label">Fairies</div>
-                <video controls loop autoplay muted>
-                    <source src="videos/cats/Two playful fairies _0.72_2_14.5_fps15.mp4" type="video/mp4">
-                </video>
-                <div class="prompt-display">"Two playful fairies with delicate wings"</div>
-            </div>
-
-           <!-- Dog  -->
-           <div class="transformation-item">
-            <div class="showcase-label">Input</div>
-            <video controls loop autoplay muted>
-                <source src="videos/sources/dog_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">Original</div>
-        </div>
-
-        <div class="transformation-item">
-            <div class="showcase-label">Motorcycle</div>
-            <video controls loop autoplay muted>
-                <source src="videos/dog/A sleek black motorc_0.72_2_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"A sleek black motorcycle"</div>
-        </div>
-
-        <div class="transformation-item">
-            <div class="showcase-label">Samurai</div>
-            <video controls loop autoplay muted>
-                <source src="videos/dog/A legendary samurai _0.72_1_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"A legendary samurai"</div>
-        </div>
-        <!-- Camera -->
-        <div class="transformation-item">
-            <div class="showcase-label">Input</div>
-            <video controls loop autoplay muted>
-                <source src="videos/camera_turn/A owl perched on a b_3_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"Original"</div>
-        </div>
-
-        <div class="transformation-item">
-            <div class="showcase-label">Goat</div>
-            <video controls loop autoplay muted>
-                <source src="videos/camera_turn/A mountain goat stan_3_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"A mountaing goat standing on a ruffed cliffside"</div>
-        </div>
-
-        <div class="transformation-item">
-            <div class="showcase-label">Parrot</div>
-            <video controls loop autoplay muted>
-                <source src="videos/camera_turn/A parrot perched on _3_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"A parrot perched on a branch"</div>
-        </div>
-
-
-        <div class="transformation-item">
-            <div class="showcase-label">Penguin</div>
-            <video controls loop autoplay muted>
-                <source src="videos/camera_turn/A penguin on an iceb_3_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"A penguin on an iceberg"</div>
-        </div>
-
-        <div class="transformation-item">
-            <div class="showcase-label">Rabbit</div>
-            <video controls loop autoplay muted>
-                <source src="videos/camera_turn/A rabbit exploring a_3_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"A rabbit exploring a magical garden"</div>
-        </div>
-
-        <div class="transformation-item">
-            <div class="showcase-label">Owl</div>
-            <video controls loop autoplay muted>
-                <source src="videos/camera_turn/An owl in a snow-cow_3_14.5_fps15.mp4" type="video/mp4">
-            </video>
-            <div class="prompt-display">"An owl in a snow-cowered landscape"</div>
-        </div>
-        </div>
-    </div>
 
     <!-- Teaser -->
     <div class="storyboard-container">
@@ -462,7 +179,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -470,31 +187,9 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/car_turn/A vintage biplane gl_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/car_turn/A vintage biplane gl_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A vintage biplane gliding low along a serene beach"</div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Complex Human Motion Category -->
-        <div class="teaser-category">
-            <div class="category-title">Complex Human Motion Transfer</div>
-            <div class="transformations-grid-teaser">
-                <div class="transformation-item">
-                    <div class="showcase-label">Input</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/sources/woman_dancing_15_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">Original Video</div>
-                </div>
-    
-                <div class="transformation-item">
-                    <div class="showcase-label">Motion Transfer</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/woman_dancing/Toy Story universe, _0.74_-1_14.5_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"Woody from Toy Story"</div>
                 </div>
             </div>
         </div>
@@ -506,7 +201,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/Zoom-out from a pain_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/Zoom-out from a pain_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -514,7 +209,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/camera_zoom_out/processed/Zoom-out from a coff_-1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/camera_zoom_out/processed/Zoom-out from a coff_-1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A coffee cup on a café table in a miniature cityscape"</div>
                 </div>
@@ -528,7 +223,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/kittens_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/kittens_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -536,13 +231,37 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/kittens/Three baby dragons c_0.74_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/kittens/Three baby dragons c_0.74_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"Three baby dragons crowded around glowing moonstone bowls"</div>
                 </div>
             </div>
         </div>
+        
+        <!-- Complex Human Motion Category -->
+        <div class="teaser-category">
+            <div class="category-title">Complex Human Motion Transfer</div>
+            <div class="transformations-grid-teaser">
+                <div class="transformation-item">
+                    <div class="showcase-label">Input</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/sources/woman_dancing_15_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Original Video</div>
+                </div>
+    
+                <div class="transformation-item">
+                    <div class="showcase-label">Motion Transfer</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/woman_dancing/Toy Story universe, _0.74_-1_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"Woody from Toy Story"</div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
 
     <!-- Figure 3. Qualitative Results -->
     <div class="storyboard-container">
@@ -562,7 +281,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -570,7 +289,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 1</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/car_turn/A wooden cart pulled_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/car_turn/A wooden cart pulled_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">“A wooden cart pulled by tiny, winged creatures”</div>
                 </div>
@@ -578,7 +297,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 2</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/car_turn/A crystal carriage d_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/car_turn/A crystal carriage d_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">“A crystal carriage drawn by an ethereal horse in a fog”</div>
                 </div>
@@ -589,7 +308,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/blackswan_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/blackswan_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -597,7 +316,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 1</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/blackswan/A medieval knight on_-1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/blackswan/A medieval knight on_-1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A medieval knight on horseback"</div>
                 </div>
@@ -605,7 +324,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 2</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/blackswan/A man riding a jetsk_-1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/blackswan/A man riding a jetsk_-1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">“A man riding a jetski”</div>
                 </div>
@@ -617,7 +336,7 @@
             <div class="transformation-item">
                 <div class="showcase-label">Input</div>
                 <video controls loop autoplay muted>
-                    <source src="videos/sources/elephant_fps15.mp4" type="video/mp4">
+                    <source src="data/videos/sources/elephant_fps15.mp4" type="video/mp4">
                 </video>
                 <div class="prompt-display">Original Video</div>
             </div>
@@ -625,7 +344,7 @@
             <div class="transformation-item">
                 <div class="showcase-label">Motion Transfer 1</div>
                 <video controls loop autoplay muted>
-                    <source src="videos/elephant/A pirate captain str_0.8_1_14.5_fps15.mp4" type="video/mp4">
+                    <source src="data/videos/elephant/A pirate captain str_0.8_1_14.5_fps15.mp4" type="video/mp4">
                 </video>
                 <div class="prompt-display">“A pirate captain striding across the deck of a ship”</div>
             </div>
@@ -633,7 +352,7 @@
             <div class="transformation-item">
                 <div class="showcase-label">Motion Transfer 2</div>
                 <video controls loop autoplay muted>
-                    <source src="videos/elephant/A camel crossing a r_0.8_1_14.5_fps15.mp4" type="video/mp4">
+                    <source src="data/videos/elephant/A camel crossing a r_0.8_1_14.5_fps15.mp4" type="video/mp4">
                 </video>
                 <div class="prompt-display">“A camel is crossing a road”</div>
             </div>
@@ -647,7 +366,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/kittens_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/kittens_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -655,7 +374,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 1</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/kittens/Three juvenile unico_0.74_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/kittens/Three juvenile unico_0.74_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"Three juvenile unicorns sharing their first sip"</div>
                 </div>
@@ -663,7 +382,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 2</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/kittens/Three young phoenixe_0.74_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/kittens/Three young phoenixe_0.74_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"Three young phoenixes at their morning ritual"</div>
                 </div>
@@ -674,7 +393,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/frisbee_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/frisbee_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -682,7 +401,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 1</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/frisbee/A majestic eagle swo_0.72_2_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/frisbee/A majestic eagle swo_0.72_2_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">“A majestic eagle swooping to snatch a shiny gold coin”</div>
                 </div>
@@ -690,7 +409,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 2</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/frisbee/A medieval knight on_0.75_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/frisbee/A medieval knight on_0.75_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">“A medieval knight catches the magical artifact”</div>
                 </div>
@@ -701,7 +420,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/cats_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/cats_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original Video</div>
                 </div>
@@ -709,7 +428,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 1</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/cats/A pair of miniature _0.78_2_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/cats/A pair of miniature _0.78_2_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">“A pair of miniature medieval knights”</div>
                 </div>
@@ -717,7 +436,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer 2</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/cats/Two tiny astronauts _0.8_4_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/cats/Two tiny astronauts _0.8_4_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A duo of adorable robots”</div>
                 </div>
@@ -728,79 +447,23 @@
 
     
     <!-- Qualitative Comparison  -->
-    <!-- <div class="storyboard-container">
+    <div class="storyboard-container">
         <div class="storyboard-title">
             <div class="figure-header">
                 <span class="figure-label">[Fig.4] Qualitative Comparison</span>
             </div>
-        </div> -->
+        </div>
         
         <!-- Category Title -->
-        <!-- <div class="category-title" style="text-align: center;">Single Object Motion Transfer</div> -->
+        <div class="category-title" style="text-align: center;">Single Object Motion Transfer</div>
 
         <!-- Single Object -->
-        <!-- <div class="teaser-category">
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
-                <div class="transformation-item">
-                    <div class="showcase-label">Input</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">Original car sequence</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MI</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_MI.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">DMT</div>
-                    <video controls loop autoplay muted>
-                        <source src="comparison/dmt/car_turn_dmt_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-            </div>
-
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="transformation-item">
-                    <div class="showcase-label">VMC</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_VMC.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MD</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_MD.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MotionShop (Ours)</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/car_turn/A sleek motorcycle d_1_14.5_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Multi-Object Section -->
-        <!-- <div class="category-title" style="text-align: center;">Multi-Object Motion Transfer</div>
         <div class="teaser-category">
             <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/cats_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original car sequence</div>
                 </div>
@@ -808,7 +471,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">MI</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_MI.mp4" type="video/mp4">
+                        <source src="data/comparison/mi/mi_car_turn_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
                 </div>
@@ -816,7 +479,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">DMT</div>
                     <video controls loop autoplay muted>
-                        <source src="comparison/dmt/cats_dmt.mp4" type="video/mp4">
+                        <source src="data/comparison/dmt/car_turn_dmt_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
                 </div>
@@ -826,7 +489,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">VMC</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_VMC.mp4" type="video/mp4">
+                        <source src="data/comparison/vmc/1_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
                 </div>
@@ -834,7 +497,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">MD</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_MD.mp4" type="video/mp4">
+                        <source src="data/comparison/md/1_200_A sleek motorc_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
                 </div>
@@ -842,69 +505,125 @@
                 <div class="transformation-item">
                     <div class="showcase-label">MotionShop (Ours)</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/cats/A pair of miniature _0.78_2_14.5_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Camera Motion Section -->
-        <!-- <div class="category-title" style="text-align: center;">Camera Motion Transfer</div>
-        <div class="teaser-category">
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
-                <div class="transformation-item">
-                    <div class="showcase-label">Input</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/sources/zoom_out_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">Original car sequence</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MI</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_MI.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">DMT</div>
-                    <video controls loop autoplay muted>
-                        <source src="comparison/dmt/zoom_out_dmt_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-            </div>
-
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="transformation-item">
-                    <div class="showcase-label">VMC</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_VMC.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MD</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/comparisons/car_MD.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MotionShop (Ours)</div>
-                    <video controls loop autoplay muted>
-                        <source src="videos/camera_zoom_out/processed/Zoom-out from a rain_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/car_turn/A sleek motorcycle d_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
                 </div>
             </div>
         </div>
-    </div> -->
+
+        <!-- Multi-Object Section -->
+        <div class="category-title" style="text-align: center;">Multi-Object Motion Transfer</div>
+        <div class="teaser-category">
+            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
+                <div class="transformation-item">
+                    <div class="showcase-label">Input</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/sources/cats_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Original cats sequence</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">MI</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/mi/mi_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A pair of miniature medieval knights”</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">DMT</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/dmt/cats_dmt.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A pair of miniature medieval knights”</div>
+                </div>
+            </div>
+
+            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="transformation-item">
+                    <div class="showcase-label">VMC</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/vmc/vmc_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A pair of miniature medieval knights”</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">MD</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/md/md_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A pair of miniature medieval knights”</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">MotionShop (Ours)</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/cats/A pair of miniature _0.78_2_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A pair of miniature medieval knights”</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camera Motion Section -->
+        <div class="category-title" style="text-align: center;">Camera Motion Transfer</div>
+        <div class="teaser-category">
+            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
+                <div class="transformation-item">
+                    <div class="showcase-label">Input</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/sources/zoom_out_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Original camera sequence</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">MI</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/mi/mi_Zoom-out_from_a_rain_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">DMT</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/dmt/dmt_0_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
+                </div>
+            </div>
+
+            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="transformation-item">
+                    <div class="showcase-label">VMC</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/vmc/vmc_0_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">MD</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/comparison/md/md_0_200_Zoom-out from _fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
+                </div>
+
+                <div class="transformation-item">
+                    <div class="showcase-label">MotionShop (Ours)</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/camera_zoom_out/processed/Zoom-out from a rain_1_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Camera Motion Transfer Results -->
     <div class="storyboard-container">
@@ -919,14 +638,14 @@
             <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 30px;">
                 <div class="transformation-item">
                     <div class="showcase-label">Camera Trajectory</div>
-                    <img src="trajectories/dd4.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover">
+                    <img src="data/trajectories/dd4.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover">
                     <div class="prompt-display">Pan-left with zoom-in trajectory</div>
                 </div>
 
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/kitchen_15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/kitchen_15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original camera movement sequence</div>
                 </div>
@@ -934,7 +653,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/kitchen/A steampunk clockwor_0.82_3_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/kitchen/A steampunk clockwor_0.82_3_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A steampunk clockwork butterfly"</div>
                 </div>
@@ -944,14 +663,14 @@
             <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 30px;">
                 <div class="transformation-item">
                     <div class="showcase-label">Camera Trajectory</div>
-                    <img src="trajectories/dd3.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px;">
+                    <img src="data/trajectories/dd3.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px;">
                     <div class="prompt-display">Dive and ascend trajectory</div>
                 </div>
 
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/waterfall_15_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/waterfall_15_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original camera movement sequence</div>
                 </div>
@@ -959,7 +678,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/waterfall/A golden snitch divi_0.8_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/waterfall/A golden snitch divi_0.8_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A golden snitch diving through Quidditch stadium"</div>
                 </div>
@@ -969,14 +688,14 @@
             <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 30px;">
                 <div class="transformation-item">
                     <div class="showcase-label">Camera Trajectory</div>
-                    <img src="trajectories/dd9.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px;">
+                    <img src="data/trajectories/dd9.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px;">
                     <div class="prompt-display">Circular motion trajectory</div>
                 </div>
 
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/camera_horizontal_15_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/camera_horizontal_15_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original camera movement sequence</div>
                 </div>
@@ -984,7 +703,7 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/camera_horizontal/A medieval knight in_0.75_3_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/camera_horizontal/A medieval knight in_0.75_3_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"A medieval knight in gleaming armor"</div>
                 </div>
@@ -994,14 +713,14 @@
             <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr);">
                 <div class="transformation-item">
                     <div class="showcase-label">Camera Trajectory</div>
-                    <img src="trajectories/dd6.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px;">
+                    <img src="data/trajectories/dd6.png" alt="Camera trajectory visualization" style="width: 100%; height: 270px; object-fit: cover; border-radius: 8px;">
                     <div class="prompt-display">Zoom-out trajectory</div>
                 </div>
 
                 <div class="transformation-item">
                     <div class="showcase-label">Input</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/sources/Zoom-out from a pain_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/sources/Zoom-out from a pain_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">Original camera movement sequence</div>
                 </div>
@@ -1009,10 +728,639 @@
                 <div class="transformation-item">
                     <div class="showcase-label">Motion Transfer</div>
                     <video controls loop autoplay muted>
-                        <source src="videos/camera_zoom_out/processed/Zoom-out from a sing_1_14.5_fps15.mp4" type="video/mp4">
+                        <source src="data/videos/camera_zoom_out/processed/Zoom-out from a sing_1_14.5_fps15.mp4" type="video/mp4">
                     </video>
                     <div class="prompt-display">"Handwritten letter on pages"</div>
                 </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Strength Ablation  -->
+    <div class="storyboard-container">
+        <div class="storyboard-title">
+            <div class="figure-header">
+                <span class="figure-label">[Fig.7 - Left] Ablation 1: Strength</span>
+            </div>
+        </div>
+
+        <div class="teaser-category">
+            <div class="transformations-grid" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 30px;">
+                <!-- Input -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Input</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/strength/dog_swimming_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Original Video</div>
+                </div>
+
+                <!-- Strength 0.6 -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Strength: 0.6</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/strength/A horse jumping into_0.60_1_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A horse is jumping into river"</div>
+                </div>
+
+                <!-- Strength 0.7 -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Strength: 0.7</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/strength/A horse jumping into_0.70_1_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A horse is jumping into river"</div>
+                </div>
+
+                <!-- Strength 0.8 -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Strength: 0.8</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/strength/A horse jumping into_0.80_1_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A horse is jumping into river"</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timestep Ablation -->
+    <div class="storyboard-container">
+        <div class="storyboard-title">
+            <div class="figure-header">
+                <span class="figure-label">[Fig.7 - Right] Ablation 2: Timestep</span>
+            </div>
+        </div>
+
+        <div class="teaser-category">
+            <div class="transformations-grid" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 30px;">
+                <!-- Input -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Input</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/timestep/longboard_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Original Video</div>
+                </div>
+
+                <!-- Timestep: 0.05 -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Timestep: 0.05</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/timestep/A skier smoothly nav_0.75_1_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A skier smoothly navigating down a snowy mountain trail”</div>
+                </div>
+
+                <!-- Timestep: 0.1 -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Timestep: 0.1</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/timestep/A skier smoothly nav_0.75_2_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A skier smoothly navigating down a snowy mountain trail”</div>
+                </div>
+
+                <!-- Timestep: 0.25 -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Timestep: 0.25</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/timestep/A skier smoothly nav_0.75_5_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A skier smoothly navigating down a snowy mountain trail”</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ablation 3: Various Guidances -->
+    <div class="storyboard-container">
+        <div class="storyboard-title">
+            <div class="figure-header">
+                <span class="figure-label">[Fig.8] Ablation 3: Various Guidances</span>
+            </div>
+        </div>
+
+        <div class="teaser-category">
+            <!-- Cat Sequence Row -->
+            <div class="transformations-grid" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 30px;">
+                <!-- Input -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Input</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/sources/cats_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Original cat sequence</div>
+                </div>
+
+                <!-- CFG -->
+                <div class="transformation-item">
+                    <div class="showcase-label">CFG</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/guidance/CFG_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A pair of miniature pirates"</div>
+                </div>
+
+                <!-- USG -->
+                <div class="transformation-item">
+                    <div class="showcase-label">USG</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/guidance/USG_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A pair of miniature pirates"</div>
+                </div>
+
+                <!-- MSG -->
+                <div class="transformation-item">
+                    <div class="showcase-label">MSG</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/cats/A pair of cute, mini_0.7_2_14.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A pair of miniature pirates"</div>
+                </div>
+            </div>
+
+            <!-- Wolf Sequence Row -->
+            <div class="transformations-grid" style="grid-template-columns: repeat(5, 1fr);">
+                <!-- Input -->
+                <div class="transformation-item">
+                    <div class="showcase-label">Input</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/sources/wolf_15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Original wolf sequence</div>
+                </div>
+
+                <!-- CFG -->
+                <div class="transformation-item">
+                    <div class="showcase-label">CFG</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/guidance/wolf_CFG_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A pig"</div>
+                </div>
+
+                 <!-- CFG with motion description -->
+                 <div class="transformation-item">
+                    <div class="showcase-label">CFG w/ Motion Description</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/guidance/wolf_turning_CFG_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A pig turning his head to the left"</div>
+                </div>
+
+                <!-- USG -->
+                <div class="transformation-item">
+                    <div class="showcase-label">USG</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/ablations/guidance/wolf_USG_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A pig"</div>
+                </div>
+
+                <!-- MSG -->
+                <div class="transformation-item">
+                    <div class="showcase-label">MSG</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/videos/wolf/pig_1_9.5_fps15.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A pig"</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Additional Results -->
+    <div class="storyboard-container">
+        <div class="storyboard-title">
+            <div class="figure-header">
+                <span class="figure-label">Additional Qualitative Results</span>
+                <!-- <span class="figure-title">Teaser</span> -->
+            </div>
+        </div>
+
+        <div class="transformations-grid">
+            
+            <div class="transformation-item">
+                <div class="showcase-label">Input</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">Original</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Plane</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A vintage biplane gl_1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A vintage biplane in a serene beach, where waves crash against the shore"</div>
+            </div>
+            
+            <div class="transformation-item">
+                <div class="showcase-label">Tiger</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A lively tiger leapi_0.8_-1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A tiger leaping along a winding dirt path"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Car</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A futuristic hoverin_1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A futuristic hovering car with neon underglow"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Motorcycle</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A sleek motorcycle d_1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">“A motorcycle driven by a robot, cruising through a desert”</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Carriage</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A crystal carriage d_1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">“A crystal carriage drawn by an ethereal horse in a fog”</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Cart</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A wooden cart pulled_1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">“A wooden cart pulled by tiny, winged creatures”</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Snail</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A whimsical giant sn_1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A whimsical giant snail with a spiral shell, making its way along a misty, enchanted forest"</div>
+            </div>
+            
+            <div class="transformation-item">
+                <div class="showcase-label">Submarine</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/car_turn/A submarine gliding _1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A submarine gliding through a glass tube filled with water"</div>
+            </div>
+            
+            <!-- Locomotive -->
+            <div class="transformation-item">
+                <div class="showcase-label">Input</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/sources/train-fantastic_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">Original</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Cycling</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/locomotive/a man with helmet cy_1_9.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A man with helmet cycling"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Riding Segway</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/locomotive/realistic knight in _1_9.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A knight in armor rides a Segway"</div>
+            </div>
+
+
+            <div class="transformation-item">
+                <div class="showcase-label">Elephant</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/locomotive/giant elephant is wa_1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A giant elephant is walking"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Giraffe</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/locomotive/giraffe is moving in_1_9.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A giraffe is moving in the wild"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Plane</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/locomotive/airplane driving in _1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"An airplane is driven in the forest"</div>
+            </div>
+
+
+            <!-- Wolf -->  
+            <div class="transformation-item">
+                <div class="showcase-label">Input</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/sources/wolf_15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">Original</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Owl</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/wolf/Mechanical owl. A st_1_9.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A mechanical owl"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">TV Robot</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/wolf/Vintage TV Robot. A _1_9.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A retro vintage TV robot"</div>
+            </div>
+
+
+            <div class="transformation-item">
+                <div class="showcase-label">Monkey</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/wolf/monkey_1_6.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A monkey"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Pig</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/wolf/pig_1_9.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A pig"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">TV Remote</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/wolf/TV Remote_1_9.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A person holding a TV remote"</div>
+            </div>
+
+            <!-- Blackswan -->
+            <div class="transformation-item">
+                <div class="showcase-label">Input</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/sources/blackswan_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">Original</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Dolphin</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/blackswan/A dolphin leaping ou_-1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A dolphin leaping out of the water,"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Turtle</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/blackswan/A giant turtle with _-1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A giant turtle with a miniature forest growing on its back"</div>
+            </div>
+
+
+            <div class="transformation-item">
+                <div class="showcase-label">Jetski</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/blackswan/A man riding a jetsk_-1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A man riding a jetski"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Knight</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/blackswan/A medieval knight on_-1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A medieval knight on horseback"</div>
+            </div>
+
+            <div class="transformation-item">
+                <div class="showcase-label">Hot Air Balloon</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/blackswan/A floating hot air b_-1_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A floating hot air balloon"</div>
+            </div>
+
+            <!-- Cats -->
+            <div class="transformation-item">
+                <div class="showcase-label">Input</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/sources/cats_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">Original</div>
+            </div>
+    
+            <div class="transformation-item">
+                <div class="showcase-label">Miniatures</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/cats/A pair of cute, mini_0.7_2_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"A pair of miniature creatures"</div>
+            </div>
+    
+            <div class="transformation-item">
+                <div class="showcase-label">Fairies</div>
+                <video controls loop autoplay muted>
+                    <source src="data/videos/cats/Two playful fairies _0.72_2_14.5_fps15.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-display">"Two playful fairies with delicate wings"</div>
+            </div>
+
+           <!-- Dog  -->
+           <div class="transformation-item">
+            <div class="showcase-label">Input</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/sources/dog_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">Original</div>
+        </div>
+
+        <div class="transformation-item">
+            <div class="showcase-label">Motorcycle</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/dog/A sleek black motorc_0.72_2_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"A sleek black motorcycle"</div>
+        </div>
+
+        <div class="transformation-item">
+            <div class="showcase-label">Samurai</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/dog/A legendary samurai _0.72_1_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"A legendary samurai"</div>
+        </div>
+        <!-- Camera -->
+        <div class="transformation-item">
+            <div class="showcase-label">Input</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/camera_turn/A owl perched on a b_3_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"Original"</div>
+        </div>
+
+        <div class="transformation-item">
+            <div class="showcase-label">Goat</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/camera_turn/A mountain goat stan_3_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"A mountaing goat standing on a ruffed cliffside"</div>
+        </div>
+
+        <div class="transformation-item">
+            <div class="showcase-label">Parrot</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/camera_turn/A parrot perched on _3_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"A parrot perched on a branch"</div>
+        </div>
+
+
+        <div class="transformation-item">
+            <div class="showcase-label">Penguin</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/camera_turn/A penguin on an iceb_3_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"A penguin on an iceberg"</div>
+        </div>
+
+        <div class="transformation-item">
+            <div class="showcase-label">Rabbit</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/camera_turn/A rabbit exploring a_3_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"A rabbit exploring a magical garden"</div>
+        </div>
+
+        <div class="transformation-item">
+            <div class="showcase-label">Owl</div>
+            <video controls loop autoplay muted>
+                <source src="data/videos/camera_turn/An owl in a snow-cow_3_14.5_fps15.mp4" type="video/mp4">
+            </video>
+            <div class="prompt-display">"An owl in a snow-cowered landscape"</div>
+        </div>
+        </div>
+    </div>
+    <div class="storyboard-container">
+        <div class="storyboard-title">
+            <div class="figure-header">
+                <span class="figure-label">MotionBench Synthetic Examples</span>
+            </div>
+        </div>
+
+        <div class="teaser-category">
+            <!-- Single row with three examples -->
+            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 30px;">
+                <!-- Skateboarding Example 1-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Skateboarding</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/skateboarding/origiinal_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Synthetic skateboarding sequence</div>
+                </div>
+
+               <!-- Skateboarding Example 2-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Horse</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/skateboarding/randomized-horse_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A horse"</div>
+                </div>
+
+                <!-- Skateboarding Example 3-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Iron-man</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/skateboarding/randomized-ironman_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"An Iron-man"</div>
+                </div>
+
+                <!-- Skateboarding Example 4-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Segway</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/skateboarding/randomized-knight-Segway_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A knight in armor rides a Segway"</div>
+                </div>
+
+                <!-- Skateboarding Example 5-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Motorcycle</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/skateboarding/randomized-motorcycle_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">Synthetic parachute sequence</div>
+                </div>
+
+                <!-- Skateboarding Example 5-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Bicycle</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/skateboarding/randomized-toy-bear-cycling_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A toy bear cycling"</div>
+                </div>
+
+                <!-- Puppies Example 1-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Puppies</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/puppies/Cinematic trailer for a group of adventurous puppies exploring ruins in the sky._4_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A toy bear cycling"</div>
+                </div>
+
+                <!-- Puppies Example 2-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Squirrels</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/puppies/squirrels_9_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A toy bear cycling"</div>
+                </div>
+
+                <!-- Puppies Example 3-->
+                <div class="transformation-item">
+                    <div class="showcase-label">Rabbits</div>
+                    <video controls loop autoplay muted>
+                        <source src="data/motionbench/puppies/rabbits_10_fps12.mp4" type="video/mp4">
+                    </video>
+                    <div class="prompt-display">"A toy bear cycling"</div>
+                </div>
+
             </div>
         </div>
     </div>
