@@ -809,63 +809,8 @@
         <!-- Category Title -->
         <div class="category-title" style="text-align: center;">Single Object Motion Transfer</div>
 
-        <!-- Single Object -->
-        <div class="teaser-category">
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
-                <div class="transformation-item">
-                    <div class="showcase-label">Input</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/videos/sources/car_turn_fps15_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">Original car sequence</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">Motion Inversion</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/mi/mi_car_turn_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">Space-Time Diffusion</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/dmt/car_turn_dmt_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-            </div>
-
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="transformation-item">
-                    <div class="showcase-label">Video Motion Customization</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/vmc/1_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">Motion Director</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/md/1_200_A sleek motorc_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MotionShop (Ours)</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/videos/car_turn/A sleek motorcycle d_1_14.5_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">"A motorcycle driven by a robot, cruising through a desert"</div>
-                </div>
-            </div>
-        </div>
-
         <!-- Multi-Object Section -->
-        <div class="category-title" style="text-align: center;">Multi-Object Motion Transfer</div>
+<!--         <div class="category-title" style="text-align: center;">Multi-Object Motion Transfer</div> -->
         <div class="teaser-category">
             <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
                 <div class="transformation-item">
@@ -920,62 +865,7 @@
             </div>
         </div>
 
-        <!-- Camera Motion Section -->
-        <div class="category-title" style="text-align: center;">Camera Motion Transfer</div>
-        <div class="teaser-category">
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 20px;">
-                <div class="transformation-item">
-                    <div class="showcase-label">Input</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/videos/sources/zoom_out_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">Original camera sequence</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">Motion Inversion</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/mi/mi_Zoom-out_from_a_rain_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">Space-Time Diffusion</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/dmt/dmt_0_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
-                </div>
-            </div>
-
-            <div class="transformations-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="transformation-item">
-                    <div class="showcase-label">Video Motion Customization</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/vmc/vmc_0_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">Motion Director</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/comparison/md/md_0_200_Zoom-out from _fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
-                </div>
-
-                <div class="transformation-item">
-                    <div class="showcase-label">MotionShop (Ours)</div>
-                    <video controls loop autoplay muted>
-                        <source src="data/videos/camera_zoom_out/processed/Zoom-out from a rain_1_14.5_fps15.mp4" type="video/mp4">
-                    </video>
-                    <div class="prompt-display">“A raindrop clinging to a green leaf, reflecting its surroundings like a tiny mirror.”</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 
     <section class="section" id="BibTeX">
         <div class="container">
@@ -983,7 +873,7 @@
           <pre><code>@article{yesiltepe2024motionshop,
           author    = {Hidir Yesiltepe and Tuna Han Salih Meral and Conor Dunlop and Pinar Yanardag},
           title     = {MotionShop: Zero-Shot Motion Transfer in Video Diffusion Models with Mixture of Score Guidance},
-          journal   = {ICCV},
+          journal   = {Arxiv Preprint},
           year      = {2024},
       }</code></pre>
         </div>
