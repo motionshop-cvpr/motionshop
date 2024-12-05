@@ -14,14 +14,13 @@
     <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="icon" href="static/image.png">
+    <link rel="icon" href="static/icon.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
-    <script src="https://www.w3counter.com/tracker.js?id=154564"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
@@ -378,7 +377,7 @@
                   <span class="author-block">
                     <a href="https://tunahansalih.github.io/">Tuna Han Salih Meral</a>,</span>
                   <span class="author-block">
-                    <a href="https://sanghani.cs.vt.edu/person/connor-dunlop/">Conor Dunlop</a>,
+                    <a href="#">Conor Dunlop</a>,
                   </span>
                   <span class="author-block">
                     <a href="https://pinguar.org/">Pinar Yanardag</a>
@@ -492,7 +491,27 @@
           </div>
           <!--/ Abstract. -->
 
-    
+        
+<!-- Image and Description Section -->
+  <section class="section section-light-gray-1">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title">Method Overview</h2>
+          <figure class="image">
+            <img src="static/CVPR25 - Framework.jpg" alt="Framework">
+          </figure>
+          <p class="description">
+            Our framework consists of three key stages: (1) Reference Motion Extraction captures motion patterns from early-timestep conditional scores through gradient fields ∇z log p(z|y). 
+            (2) Motion Transfer with MSG combines content and motion scores through our novel Mixture of Score Guidance formulation, enabling precise control over motion 
+            transfer while preserving scene coherence. (3) MSG Path Redirection employs implicit attention-guided dynamics to ensure stable motion transfer by navigating the 
+            diffusion process through modified Langevin dynamics. This zero-shot approach operates directly on pre-trained models without additional training, successfully handling
+             diverse scenarios from single object transformations to complex camera trajectories.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
     
 
